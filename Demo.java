@@ -283,6 +283,8 @@
 	// 	}
 	// }
 
+// Java Threads
+
 // First way by extending Thread Class
 	// public  class Demo extends Thread{
 	// 	public static void main(String[] args) {
