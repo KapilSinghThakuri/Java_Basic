@@ -308,7 +308,26 @@
 	// 		System.out.println("This is running inside the Thread. ");
 	// 	}
 	// }
-
+// Multithreading (sleep() method)
+	// public class Demo implements Runnable{
+	// 	public void run(){
+	// 		for (int i = 0; i<=5 ; i++ ) {
+	// 			try{
+	// 				Thread.sleep(1000);
+	// 			}catch(InterruptedException e){
+	// 				System.out.println(e);
+	// 			}
+	// 		System.out.println("This Thread1");
+	// 		}
+	// 	}
+	// 	public static void main(String[] args) {
+	// 		Demo dm = new Demo();
+	// 		Thread thread1= new Thread(dm);
+	// 		// Thread thread2 = new Thread(dm);
+	// 		thread1.start();
+	// 		// thread2.start();
+	// 	}
+	// }
 // Java Swing ( GUI widget Toolkit - That provide a UI interface.)
 	// import javax.swing.*;
 	// import java.awt.FlowLayout;
@@ -442,6 +461,66 @@
 	// 	Demo awt_obj = new Demo();      
 	// 	}  
 	// }
+// AWT Toolkit Example
+	// import java.awt.*;
+	// public class Demo {
+	//   public static void main(String[] args) {
+	//       Toolkit t = Toolkit.getDefaultToolkit();
+	//       System.out.println("Screen resolution = " + t.getScreenResolution());
+	//       Dimension d = t.getScreenSize();
+	//       System.out.println("Screen width = " + d.width);
+	//       System.out.println("Screen height = " + d.height);
+	//   }
+	// }
+
+// Action Listener (Adding Two Numbers)
+	// import javax.swing.*;
+	// import java.awt.*;
+	// import java.awt.event.*;
+	// public class Demo extends JFrame implements ActionListener{
+	// 	JTextField tf1, tf2;
+	// 	JLabel lb3;
+	// 	Demo(){
+	// 		setSize(400,500);
+	// 		setLayout(new FlowLayout());
+
+	// 		JLabel lb1 = new JLabel("Enter first number: ");
+	// 		lb1.setBounds(30,150,180,40);
+	// 		add(lb1);
+	// 		tf1 = new JTextField();
+	// 		tf1.setBounds(30,90,100,40);
+	// 		add(tf1);
+	// 		JLabel lb2 = new JLabel("Enter second number: ");
+	// 		lb2.setBounds(30,150,180,40);
+	// 		add(lb2);
+	// 		tf2 = new JTextField();
+	// 		tf2.setBounds(30,90,100,40);
+	// 		add(tf2);
+	// 		lb3 = new JLabel();
+	// 		lb3.setBounds(30,150,180,40);
+	// 		add(lb3);
+
+
+	// 		JButton b = new JButton("Sum");
+	// 		b.setBounds(30,90,100,40);
+	// 		add(b);
+	// 		b.addActionListener(this);
+	// 		setVisible(true);
+	// 	}
+	// 	public void actionPerformed(ActionEvent e){
+	// 		String str1 = tf1.getText();
+	// 		int x = Integer.parseInt(str1);
+	// 		String str2 = tf2.getText();
+	// 		int y = Integer.parseInt(str2);
+	// 		int z = x+y;
+	// 		System.out.println(z);
+	// 		String result = String.valueOf(z);
+	// 		lb3.setText(result);
+	// 	}
+	// 	public static void main(String[] args) {
+	// 		new Demo();
+	// 	}
+	// }
 
 // Java Event Handling ( actionListener )
 
@@ -466,25 +545,25 @@
 	//         f.setLayout(new FlowLayout());
 
 	//         lb1 = new JLabel("Enter first digit:");
-	// 		lb1.setBounds(20, 80, 80, 30);  
+	// 		lb1.setBounds(20, 80, 80, 30);
 
 	//         f.add(lb1);
 
 	//         tf1 = new JTextField();
-	// 		tf1.setBounds(20, 100, 80, 30);  
+	// 		tf1.setBounds(20, 100, 80, 30);
 	//         f.add(tf1);
 
 	//         lb2 = new JLabel("Enter second digit:");
-	// 		lb2.setBounds(20, 80, 80, 30);  
+	// 		lb2.setBounds(20, 80, 80, 30);
 	//         f.add(lb2);
 
 	//         tf2 = new JTextField();
-	// 		tf2.setBounds(20, 100, 80, 30);  
+	// 		tf2.setBounds(20, 100, 80, 30);
 
 	//         f.add(tf2);
 
 	//         b = new JButton("Sum");
-	// 		b.setBounds(100, 100, 80, 30);  
+	// 		b.setBounds(100, 100, 80, 30);
 	//         f.add(b);
 
 	//         result = new JLabel();
@@ -499,12 +578,12 @@
 	//         String x = tf1.getText();
 	//         int num1 = Integer.parseInt(x);
 
-	//         String y = tf2.getText(); // Corrected: use tf2.getText() instead of tf1.getText()
+	//         String y = tf2.getText();
 	//         int num2 = Integer.parseInt(y);
 
 	//         int z = num1 + num2;
 
-	//         result.setText(String.valueOf(z)); // Corrected: use String.valueOf(z) to convert int to String
+	//         result.setText(String.valueOf(z));
 	//     }
 
 	//     public static void main(String[] args) {
@@ -547,6 +626,59 @@
 	//     new Demo();  
 	// }  
 	// }  
+// MouseMotionsListener - mouseMoved & mouseDragged
+	// import java.awt.*;
+	// import java.awt.event.*;
+	// public class Demo extends Frame implements MouseMotionListener{
+	// 	Demo(){
+	// 		setSize(600,600);
+	// 		setLayout(null);
+	// 		addMouseMotionListener(this);
+	// 		setVisible(true);
+	// 	}
+	// 	public  void mouseDragged(MouseEvent e){
+	// 		Graphics g=getGraphics();
+	// 	    g.setColor(Color.BLUE);
+	// 	    g.fillOval(e.getX(),e.getY(),20,20);
+	// 	}
+	// 	public void mouseMoved(MouseEvent e){
+	// 	}
+	// 	public static void main(String[] args) {
+	// 		new Demo();
+	// 	}
+	// }
+// KeyListener (notify when ever you change the state of key)
+	// import java.awt.event.*;
+	// import java.awt.*;
+	// import javax.swing.*;
+	// public  class Demo extends JFrame implements KeyListener{
+	// 	JLabel l; JTextArea ta;
+	// 	Demo(){
+	// 		setSize(600,600);
+	// 		setLayout(null);
+	// 		l = new JLabel();
+	// 		l.setBounds (20, 50, 100, 20);
+	// 		add(l);
+	// 		ta = new JTextArea();
+	// 		// ta.setSize(200,300);
+	// 		ta.setBounds (20, 80, 300, 300);
+	// 		add(ta);
+	// 		setVisible(true);
+	// 		ta.addKeyListener(this);
+	// 	}
+	// 	public void keyPressed(KeyEvent e){
+	// 		l.setText("Key Pressed...");
+	// 	}
+	// 	public void keyTyped(KeyEvent e){
+	// 		l.setText("Key Typed...");
+	// 	}
+	// 	public void keyReleased(KeyEvent e){
+	// 		l.setText("Key Released...");
+	// 	}
+	// 	public static void main(String[] args) {
+	// 		new Demo();
+	// 	}
+	// }
 
 // File Handling ( File Creating )
 	// import java.io.File;
