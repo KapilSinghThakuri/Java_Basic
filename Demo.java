@@ -318,23 +318,23 @@
 	// }
 
 // Java throw Keyword
-	import java.util.Scanner;
-		public class Demo{
-			public void validate(int age){
-				if(age<18){
-					throw new ArithmeticException("Your're not allowed !!!");
-				}
-				else {
-					System.out.println("Your're Warmly Welcome !!!");
-				}
-			}
-			public static void main(String[] args) {
-				Scanner sc = new Scanner(System.in);
-				System.out.println("Enter your age:");
-				Demo obj = new Demo();
-				obj.validate(sc.nextInt());
-			}
-		}
+	// import java.util.Scanner;
+	// 	public class Demo{
+	// 		public void validate(int age){
+	// 			if(age<18){
+	// 				throw new ArithmeticException("Your're not allowed !!!");
+	// 			}
+	// 			else {
+	// 				System.out.println("Your're Warmly Welcome !!!");
+	// 			}
+	// 		}
+	// 		public static void main(String[] args) {
+	// 			Scanner sc = new Scanner(System.in);
+	// 			System.out.println("Enter your age:");
+	// 			Demo obj = new Demo();
+	// 			obj.validate(sc.nextInt());
+	// 		}
+	// }
 // Java Threads
 // First way by extending Thread Class
 	// public  class Demo extends Thread{
@@ -359,6 +359,7 @@
 	// 		System.out.println("This is running inside the Thread. ");
 	// 	}
 	// }
+
 // Multithreading (sleep() method)
 	// public class Demo implements Runnable{
 	// 	public void run(){
@@ -368,7 +369,7 @@
 	// 			}catch(InterruptedException e){
 	// 				System.out.println(e);
 	// 			}
-	// 		System.out.println("This Thread1");
+	// 		System.out.println("This is Thread Sleep Method.");
 	// 		}
 	// 	}
 	// 	public static void main(String[] args) {
@@ -379,6 +380,41 @@
 	// 		// thread2.start();
 	// 	}
 	// }
+// Thread Synchronizations
+// 	class Counter {
+// 	    int count;
+// 	    public void synchronized increment() {
+// 	        count++;
+// 	    }
+// 	    public int getCount() {
+// 	        return count;
+// 	    }
+// 	}
+// 	public class Demo {
+// 	    public static void main(String[] args) throws InterruptedException {
+// 	        Counter c = new Counter();
+// 	        Thread th1 = new Thread(new Runnable() {
+// 	            public void run() {
+// 	                for (int i = 0; i < 100; i++) {
+// 	                    c.increment();
+// 	                }
+// 	            }
+// 	        });
+// 	        Thread th2 = new Thread(new Runnable(){
+// 	        	public void run(){
+// 	        		for (int i=0; i<100 ; i++ ) {
+// 	        			c.increment();
+// 	        		}
+// 	        	}
+// 	        });
+// 	        th1.start();
+// 	        th1.join(); // Wait for the thread to finish before accessing count
+// 	        th2.start();
+// 	        th2.join();
+// 	        System.out.println("Final count: " + c.getCount());
+// 	    }
+// 	}
+
 // Java Swing ( GUI widget Toolkit - That provide a UI interface.)
 	// import javax.swing.*;
 	// import java.awt.FlowLayout;
@@ -734,13 +770,11 @@
 // File Handling ( File Creating )
 	// import java.io.File;
 	// import java.io.IOException;
-
 	// class Demo{
 	// 	public static void main(String[] args) {
 	// 		try {
 	//             File obj = new File("myFile.html");
 	//             boolean fileCreated = obj.createNewFile();
-
 	//             if (fileCreated) {
 	//                 System.out.println("File created successfully.");
 	//             } else {
@@ -756,15 +790,14 @@
 // File Writer
 	// import java.io.FileWriter;
 	// import java.io.IOException;
-
 	// class Demo{
 	// 	public static void main(String[] args) {
 	// 		try {
 	//            	FileWriter obj = new FileWriter("myFile.html");
-	//            	obj.write("<html><body><h1> I am Written by Java File Handling. </h1></body></html>");
+	//            	obj.write("<html><body><h1> I am Written by java file handling. </h1></body></html>");
 	//            	obj.close();
 	//         } catch (IOException e) {
-	//             System.err.println("An error occurred while creating the file: ");
+	//             System.out.println("An error occurred while creating the file: ");
 	//             e.printStackTrace();
 	//         }
 	//     }
@@ -774,7 +807,6 @@
 	// import java.util.Scanner;
 	// import java.io.File;
 	// import java.io.IOException;
-
 	// class Demo{
 	// 	public static void main(String[] args) {
 	// 		try {
@@ -801,6 +833,7 @@
 	// 		obj.delete();
 	// 	}
 	// }
+
 
 
 
