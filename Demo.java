@@ -1,4 +1,4 @@
-
+//									Java Tutorials For Beginners
 // foreach loop in Java with Array ( exclusively use to loop through elements in array )
 	// public class Demo{
 	// 	public static void main(String[] args) {
@@ -244,6 +244,27 @@
 	// 		catSound.animalSound();
 	// 	}
 	// }
+// Java Enum (Special class that represents constant (Unchangable variables like final variable))
+	// public class Demo{
+	// 	enum level{
+	// 		Low, Medium, High
+	// 	}
+	// 	public static void main(String[] args) {
+	// 		System.out.println("Level : "+level.Medium);
+	// 	}
+	// }
+// Java User Input
+	// import java.util.Scanner;
+	// public class Demo{
+	// 	public static void main(String[] args) {
+	// 		Scanner obj = new Scanner(System.in);
+	// 		System.out.println("Eter your name, age, Salary:");
+	// 		String name = obj.nextLine();
+	// 		int age = obj.nextInt();
+	// 		float salary = obj.nextFloat();
+	// 		System.out.println("Your Name, Age, Salary is: "+ name +" " +age +" "+ salary);
+	// 	}
+	// }
 
 // Java Date and Time 
 
@@ -296,8 +317,25 @@
 	// 	}
 	// }
 
+// Java throw Keyword
+	import java.util.Scanner;
+		public class Demo{
+			public void validate(int age){
+				if(age<18){
+					throw new ArithmeticException("Your're not allowed !!!");
+				}
+				else {
+					System.out.println("Your're Warmly Welcome !!!");
+				}
+			}
+			public static void main(String[] args) {
+				Scanner sc = new Scanner(System.in);
+				System.out.println("Enter your age:");
+				Demo obj = new Demo();
+				obj.validate(sc.nextInt());
+			}
+		}
 // Java Threads
-
 // First way by extending Thread Class
 	// public  class Demo extends Thread{
 	// 	public static void main(String[] args) {
