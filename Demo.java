@@ -85,12 +85,24 @@
 	// 		System.out.println(obj1.x);
 	// 	}
 	// }
-
+// Inner Class (nested Class)
+	//  class MyOuter{
+	// 	int x =10;
+	// 	 class MyInner{
+	// 		int y = 15;
+	// 	}
+	// }
+	// public class Demo{
+	// 	public static void main(String[] args) {
+	// 		MyOuter outerObj = new MyOuter();
+	// 		MyOuter.MyInner innerObj = outerObj.new MyInner();
+	// 		System.out.println("Value of X:"+outerObj.x+" "+"Value of Y:"+ innerObj.y);
+	// 	}
+	// }
 // Java constuctor Concept with Parameter
 	// public  class Demo {
 	// 	int x ;
-
-	// 	public  Demo( int y ){
+	// 	Demo( int y ){
 	// 		x = y;
 	// 	}
 	// 	public static void main(String[] args) {
@@ -103,6 +115,7 @@
 	// public class Demo{
 	// 	public static void main(String[] args) {
 	// 		Fox obj1 = new Fox();
+	// 		System.out.println("Sum: " + obj1.add(77,89));
 	// 		// System.out.println(obj1.x); //x is private attribute only accessible within class
 	// 		// System.out.println(obj1.y); //y is protected attribute only accessible within package and outside package only through inheritance.
 	// 		System.out.println(obj1.z); //z is public attribute which can accessible anywhere
