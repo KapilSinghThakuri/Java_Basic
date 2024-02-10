@@ -10,7 +10,6 @@
 	// 		System.out.println("Total no of brand is " + cars.length);
 	// 	}
 	// }
-
 // Multidimensional array
 	// 	public class Demo {
 	//     public static void main(String[] args) {
@@ -23,7 +22,6 @@
 	//         }
 	//     }
 	// }
-
 // Methods
 	// public class Demo{
 	// 	static void myMethod(int age){
@@ -55,7 +53,6 @@
 	// 		System.out.println("Roll no. - "+ z);
 	// 	}
 	// }
-
 // Java Recursion (technique the functions call itself. )
 	// public class Demo{
 	// 	static int sum( int x){
@@ -124,8 +121,7 @@
 	// }
 
 // Abstract class & methods concept ( abstract method doesn't have body ( it provided by inherting another subclass.))
-
-	// // abstract class
+	// abstract class
 	// abstract class Main {
 	//   public String fname = "John";
 	//   public int age = 24;
@@ -173,7 +169,6 @@
 	// }
 
 //Ploymorphism in Java ( it means some object or reference that behave diff in different situations.)
-
 	// class Animal {
 	// 	public void animalSound(){
 	// 		System.out.println("every animal make sounds.");
@@ -222,7 +217,6 @@
 	// }
 
 // Interface in Java ( is the another way of achieving abstractions in our program. )
-
 	// interface Animal{
 	// 	public void animalSound();
 	// }
@@ -244,6 +238,7 @@
 	// 		catSound.animalSound();
 	// 	}
 	// }
+
 // Java Enum (Special class that represents constant (Unchangable variables like final variable))
 	// public class Demo{
 	// 	enum level{
@@ -253,6 +248,7 @@
 	// 		System.out.println("Level : "+level.Medium);
 	// 	}
 	// }
+
 // Java User Input
 	// import java.util.Scanner;
 	// public class Demo{
@@ -267,9 +263,7 @@
 	// }
 
 // Java Date and Time 
-
 	// import java.time.LocalDateTime;
-
 	// public class Demo {
 	// public static void main(String[] args) {
 	//     LocalDateTime date = LocalDateTime.now();
@@ -290,10 +284,8 @@
 	// 		finally{
 	// 			System.out.println("this is from finally methods");
 	// 		}
-
 	// 	}
 	// }
-
 	// public  class Demo{
 	// 	public void checkAge(int age){
 	// 		try{
@@ -335,6 +327,7 @@
 	// 			obj.validate(sc.nextInt());
 	// 		}
 	// }
+
 // Java Threads
 // First way by extending Thread Class
 	// public  class Demo extends Thread{
@@ -380,6 +373,7 @@
 	// 		// thread2.start();
 	// 	}
 	// }
+
 // Thread Synchronizations
 // 	class Counter {
 // 	    int count;
@@ -496,7 +490,6 @@
 	// }
 
 // Anther way By creating object of another class (Associations) 
-
 	// // importing Java AWT class  
 	// import java.awt.*;    
 	  
@@ -548,6 +541,7 @@
 	// 	Demo awt_obj = new Demo();      
 	// 	}  
 	// }
+
 // AWT Toolkit Example
 	// import java.awt.*;
 	// public class Demo {
@@ -586,7 +580,6 @@
 	// 		lb3 = new JLabel();
 	// 		lb3.setBounds(30,150,180,40);
 	// 		add(lb3);
-
 
 	// 		JButton b = new JButton("Sum");
 	// 		b.setBounds(30,90,100,40);
@@ -679,7 +672,6 @@
 	// }
 
 // Mouse Listener (addMouseListener)
-
 	// import java.awt.*;  
 	// import java.awt.event.*;  
 	// public class Demo extends Frame implements MouseListener{  
@@ -713,6 +705,7 @@
 	//     new Demo();  
 	// }  
 	// }  
+
 // MouseMotionsListener - mouseMoved & mouseDragged
 	// import java.awt.*;
 	// import java.awt.event.*;
@@ -734,6 +727,7 @@
 	// 		new Demo();
 	// 	}
 	// }
+
 // KeyListener (notify when ever you change the state of key)
 	// import java.awt.event.*;
 	// import java.awt.*;
